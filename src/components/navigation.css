@@ -1,0 +1,47 @@
+nav ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    padding: 1;
+    flex: auto; 
+    display: inline-block;
+}
+nav ul .alignment li a {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(12, 115, 199);
+    border: 1px solid rgb(12, 115, 199);
+    border-radius: 20%;
+    text-decoration: none;
+    color: white;
+}
+nav ul .alignment li:hover a{
+    background-color: transparent;
+    border: 1px solid rgb(12, 115, 199);
+    color: black;
+}
+@media all and (max-width: 620px) {
+    nav ul {
+        flex-direction: column;
+        margin: 2px;
+        align-items: center;
+    }
+    nav ul  li  {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    nav ul .alignment {
+        display: inline-block;
+    }
+    nav ul .alignment li {
+        margin: 2px;
+    }
+}
